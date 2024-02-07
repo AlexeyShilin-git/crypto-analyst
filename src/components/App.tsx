@@ -1,9 +1,16 @@
-import '../assets/App.css'
+import { Layout } from "antd";
+import AppSider from "../layouts/AppSider";
+import AppHeader from "../layouts/AppHeader";
+import AppContent from "../layouts/AppContent";
 
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <Layout className="overflow-hidden h-screen w-screen">
+      <AppHeader />
+      <Layout>
+        <AppSider />
+        <AppContent />
+      </Layout>
+    </Layout>
+  );
 }
