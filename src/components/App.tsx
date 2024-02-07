@@ -1,7 +1,7 @@
 import { Layout } from "antd";
-import AppSider from "../layouts/AppSider";
-import AppHeader from "../layouts/AppHeader";
-import AppContent from "../layouts/AppContent";
+import AppSider from "./layouts/AppSider";
+import AppHeader from "./layouts/AppHeader";
+import AppContent from "./layouts/AppContent";
 
 export default function App() {
   return (
